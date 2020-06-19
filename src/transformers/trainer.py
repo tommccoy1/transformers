@@ -562,7 +562,7 @@ class Trainer:
         if iterator is not None:
             iterator.write(output)
         else:
-            print(output)
+            logger.info(output)
 
     def _training_step(
         self, model: nn.Module, inputs: Dict[str, torch.Tensor], optimizer: torch.optim.Optimizer
